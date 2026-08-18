@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from './components/ui/dialog'
 import { Trash2, ExternalLink, Plus, Globe, Folder, Edit2, FolderPlus, MoreVertical, Minus, ChevronLeft, X, Lock } from 'lucide-react'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './components/ui/dropdown-menu'
-import { toast } from 'sonner@2.0.3'
+import { toast } from 'sonner'
 import { DndProvider, useDrag, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import * as dataManager from './utils/dataManager'

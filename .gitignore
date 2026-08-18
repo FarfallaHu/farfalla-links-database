@@ -28,7 +28,3 @@ Thumbs.db
 logs
 *.log
 npm-debug.log*
-
-# Supabase (不再需要，但保留以防万一)
-supabase/functions/server/node_modules
-.supabase

@@ -78,7 +78,7 @@ import('./utils/dataManager').then(m => {
 
 ## 🚀 部署
 
-直接部署你的应用到任何静态托管服务（Vercel, Netlify, GitHub Pages等），所有访问者都能看到你的链接收藏！
+把生产构建的 `dist` 内容部署到 Hostinger，所有访问者都能看到你的链接收藏！详细步骤见 [HOSTINGER_DEPLOYMENT.md](./HOSTINGER_DEPLOYMENT.md)。
 
 ## ⚠️ 重要提醒
 

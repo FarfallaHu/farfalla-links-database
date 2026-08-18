@@ -19,7 +19,7 @@
 - **拖拽功能**: react-dnd
 - **图标**: Lucide React
 - **构建工具**: Vite
-- **托管**: Vercel（推荐）
+- **托管**: Hostinger 静态网站（也兼容其他静态托管）
 
 ## 📦 数据存储
 
@@ -48,9 +48,9 @@ npm run dev
 npm run build
 ```
 
-### 部署到 Vercel
+### 部署到 Hostinger
 
-查看详细步骤：[DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)
+查看详细步骤：[HOSTINGER_DEPLOYMENT.md](./HOSTINGER_DEPLOYMENT.md)
 
 ## 📊 当前数据统计
 
@@ -62,9 +62,9 @@ npm run build
 
 ## 🔐 安全设置
 
-默认密码：`Hudie1022`
-
-修改密码：编辑 `src/app/App.tsx` 第 276 行
+编辑提示中的密码只是前端界面锁，不是真正的账号认证。静态网站的
+JavaScript 可以被访客检查，因此不要把敏感链接、账号或密钥放进仓库。
+网页中的个人修改只保存在当前浏览器的 `localStorage`。
 
 ## 📖 使用说明
 
@@ -93,7 +93,7 @@ npm run build
 1. 打开浏览器控制台
 2. 运行导出脚本（见 DEPLOYMENT_GUIDE.md）
 3. 复制数据到 `localData.ts`
-4. 推送到 GitHub（Vercel 自动部署）
+4. 推送到 GitHub，重新构建并更新 Hostinger 上的 `dist` 文件
 
 ## 📁 项目结构
 
@@ -108,7 +108,8 @@ npm run build
 │   │   └── App.tsx          # 主应用
 │   └── styles/              # 样式文件
 ├── .gitignore
-├── vercel.json              # Vercel 配置
+├── public/.htaccess         # Hostinger 路由、缓存和安全响应头
+├── HOSTINGER_DEPLOYMENT.md  # Hostinger 部署说明
 └── package.json
 ```
 
